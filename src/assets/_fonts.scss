@@ -1,0 +1,84 @@
+// Paragraph font
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Variable.woff2') format('woff2'),
+        url('./fonts/Satoshi-Variable.woff') format('woff'),
+        url('./fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+        url('./fonts/Satoshi-VariableItalic.woff') format('woff'),
+        url('./fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+// Paragraph font alt
+@font-face {
+    font-family: 'Switzer';
+    src: url('./fonts/Switzer-Variable.woff2') format('woff2'),
+         url('./fonts/Switzer-Variable.woff') format('woff'),
+         url('./fonts/Switzer-Variable.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Switzer';
+    src: url('./fonts/Switzer-VariableItalic.woff2') format('woff2'),
+         url('./fonts/Switzer-VariableItalic.woff') format('woff'),
+         url('./fonts/Switzer-VariableItalic.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: italic;
+  }
+
+// Heading font
+@font-face {
+    font-family: "Saol Display";
+    src: url("./fonts/SaolDisplay-LightItalic.woff2") format("woff2"), url("./fonts/SaolDisplay-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Saol Display";
+    src: url("./fonts/SaolDisplay-Regular.woff2") format("woff2"), url("./fonts/SaolDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Saol Display";
+    src: url("./fonts/SaolDisplay-Light.woff2") format("woff2"), url("./fonts/SaolDisplay-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Signature font
+@font-face {
+    font-family: 'emithascript';
+    src: url('./fonts/emitha-script-webfont.woff2') format('woff2'),
+        url('./fonts/emitha-script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    font-kerning: none;
+    -webkit-text-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;
+}

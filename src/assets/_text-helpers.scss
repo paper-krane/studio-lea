@@ -1,0 +1,45 @@
+@import "./variables";
+
+.pk__text-white {
+    color: $white !important;
+}
+
+.pk__text-primary {
+    color: $primary-color !important;
+}
+
+.pk__text-italic {
+    font-style: italic;
+}
+
+.pk__text-bold {
+    font-weight: 700;
+}
+
+.pk__text-underline {
+    text-decoration: underline;
+}
+
+.pk__text-strikethrough {
+    text-decoration: line-through;
+}
+
+// Alignment
+.pk__text-left {
+    text-align: left;
+}
+
+.pk__text-center {
+    text-align: center;
+}
+
+.pk__text-right {
+    text-align: right;
+}
+
+// Truncate
+.pk__truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

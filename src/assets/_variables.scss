@@ -1,0 +1,92 @@
+@use "sass:math";
+
+// Media Queries
+$tiny-mobile-screen: 320px !default;
+$mobile-screen: 599.98px !default;
+$tablet-screen-down: 991.98px !default;
+$desktop-screen-down: 1279.98px !default;
+$desktop-large-screen-down: 1599.98px !default;
+$mobile-landscape-screen-up: 600px !default;
+$tablet-landscape-screen-up: 992px !default;
+$desktop-screen-up: 1280px !default;
+$desktop-large-screen-up: 1600px !default;
+$desktop-extra-large-screen-up: 2000px !default;
+
+$xs-and-down: "only screen and (max-width : #{$tiny-mobile-screen})" !default;
+$s-and-down: "only screen and (max-width : #{$mobile-screen})" !default;
+$m-and-down: "only screen and (max-width : #{$tablet-screen-down})" !default;
+$l-and-down: "only screen and (max-width : #{$desktop-screen-down})" !default;
+$xl-and-down: "only screen and (max-width : #{$desktop-large-screen-down})" !default;
+$m-and-up: "only screen and (min-width : #{$mobile-landscape-screen-up})" !default;
+$l-and-up: "only screen and (min-width : #{$tablet-landscape-screen-up})" !default;
+$xl-and-up: "only screen and (min-width : #{$desktop-screen-up})" !default;
+$xxl-and-up: "only screen and (min-width : #{$desktop-large-screen-up})" !default;
+$xxxl-and-up: "only screen and (min-width : #{$desktop-extra-large-screen-up})" !default;
+
+// Containers
+$container: 1080px;
+$container-s: 600px;
+$container-m: 800px;
+$container-xl: 1280px;
+$container-xxl: 1600px;
+$container-xxxl: 2000px;
+
+// Columns
+$num-cols: 12 !default;
+$gap: 32px !default;
+
+// Colors
+$primary-color: #cb9274 !default; // #E89B46
+$primary-accent-color: darken($primary-color, 10%) !default;
+$primary-gradient: linear-gradient(125deg, rgba($primary-color, 1) 47%, rgba($primary-accent-color, 1) 100%) !default;
+$secondary-color: darken($primary-color, 20%) !default;
+$secondary-accent-color: darken($primary-color, 30%) !default;
+$highlight-color: rgba($primary-color, 0.7) !default;
+$highlight-font-color: #ffffff !default;
+$white: #ffffff;
+$black: #000000;
+$grey: #9a9a9a;
+$light-grey: #f2f3f3;
+$deep-grey: #21232b;
+$dark-grey: #14141b;
+$site-bg: #ffffff !default;
+$site-bg-overflow: #040508;
+$dark-site-bg: #21232b !default;
+$dark-gradient: radial-gradient(circle at 0 0, rgba($deep-grey, 1) 0%, rgba($dark-grey, 1) 100%);
+$heading-color: $deep-grey !default;
+$font-color: $deep-grey !default;
+$sand: #e4ddd4;
+$error-red: #d41a1a;
+
+// Design Rules
+$border-radius: 5px;
+
+// Font Stacks & Font Styles
+$font-stack: "Switzer", sans-serif !default;
+$font-weight: 400 !default;
+$heading-font-stack: "Saol Display", sans-serif !default;
+$heading-font-weight: 400 !default;
+$signature-font-stack: 'emithascript', sans-serif !default;
+
+$h1-fontsize-mobile: 2.5rem !default;
+$h2-fontsize-mobile: 2rem !default;
+$h3-fontsize-mobile: 1.75rem !default;
+$h4-fontsize-mobile: 1.5rem !default;
+$h5-fontsize-mobile: 1.25rem !default;
+$h6-fontsize-mobile: 1.15rem !default;
+$h1-fontsize: 3.5rem !default;
+$h2-fontsize: 3.25rem !default;
+$h3-fontsize: 2.75rem !default;
+$h4-fontsize: 2.5rem !default;
+$h5-fontsize: 1.75rem !default;
+$h6-fontsize: 1.5rem !default;
+$h1-fontsize-desktop: 4rem !default;
+$h2-fontsize-desktop: 3.5rem !default;
+$h3-fontsize-desktop: 3.25rem !default;
+$h4-fontsize-desktop: 2.75rem !default;
+$h5-fontsize-desktop: 1.75rem !default;
+$h6-fontsize-desktop: 1.5rem !default;
+
+// Animation / Transition Rules
+$transition-all: all 0.4s ease !default;
+$transition-all-fast: all 0.2s ease !default;

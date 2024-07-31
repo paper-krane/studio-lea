@@ -1,0 +1,89 @@
+@import "./variables";
+
+*, *:before, *:after {
+    box-sizing: border-box !important;
+}
+html {
+    width: 100%;
+    background-color: $site-bg;
+    max-width: 100%;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    
+    body {
+        min-height: 100vh;
+        // overflow-x: hidden;
+        // overflow-y: auto;
+    }
+}
+
+// Challenge page
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: $font-stack;
+}
+
+
+// Links
+a, a:visited {
+    color: $secondary-color;
+    -webkit-tap-highlight-color: transparent;
+    transition: $transition-all;
+}
+a:hover, a:focus {
+    color: $secondary-color;
+    text-decoration: none;
+}
+a *, button * {
+    pointer-events: none;
+}
+
+
+// Text selection
+::selection {
+    background: $highlight-color;
+    color: $highlight-font-color;
+    -webkit-text-fill-color: $highlight-font-color;
+}
+::-moz-selection {
+    background: $highlight-color;
+    color: $highlight-font-color;
+    -webkit-text-fill-color: $highlight-font-color;
+}
+
+
+// Images
+figure {
+    margin: 0;
+    padding: 0;
+}
+img,
+video {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Smooth Scroll
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
